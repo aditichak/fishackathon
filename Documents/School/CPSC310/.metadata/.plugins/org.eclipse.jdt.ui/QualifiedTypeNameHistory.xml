@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="com.google.gwt.core.client.EntryPoint"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.VerticalPanel"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.FlexTable"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.HorizontalPanel"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.TextBox"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.Button"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.ui.RootPanel"/>
+<fullyQualifiedTypeName name="com.google.gwt.event.dom.client.ClickHandler"/>
+<fullyQualifiedTypeName name="com.google.gwt.event.dom.client.ClickEvent"/>
+<fullyQualifiedTypeName name="com.google.gwt.event.dom.client.KeyDownEvent"/>
+<fullyQualifiedTypeName name="com.google.gwt.event.dom.client.KeyDownHandler"/>
+<fullyQualifiedTypeName name="com.google.gwt.event.dom.client.KeyCodes"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.Window"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.Timer"/>
+<fullyQualifiedTypeName name="com.google.gwt.user.client.Random"/>
+<fullyQualifiedTypeName name="com.google.gwt.i18n.client.NumberFormat"/>
+<fullyQualifiedTypeName name="com.google.gwt.i18n.client.DateTimeFormat"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.users.UserServiceFactory"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.users.UserService"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="ca.ubc.cpsc310.gitlab.client.user.IUser"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="com.google.appengine.api.users.User"/>
+</qualifiedTypeNameHistroy>

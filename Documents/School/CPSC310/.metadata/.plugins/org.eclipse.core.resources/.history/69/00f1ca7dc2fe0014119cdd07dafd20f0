@@ -1,0 +1,151 @@
+package ca.ubc.cpsc310.gitlab.client.user;
+
+import java.util.ArrayList;
+<<<<<<< HEAD
+import java.util.List;
+
+import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
+
+public class User implements IUser {
+
+	
+	private static final long serialVersionUID = -4678920906536621479L;
+	
+	private List<ProductItem> shoppingCart = new ArrayList<ProductItem>();
+	private List<ProductItem> wishList = new ArrayList<ProductItem>();
+	
+	private String name;
+	private String language;
+
+	
+	public User()
+	{
+		
+=======
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import ca.ubc.cpsc310.gitlab.client.products.ProductItem;
+
+@SuppressWarnings("unchecked")
+public class User implements IUser {
+
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = -6968277136462621810L;
+	private final String LANG = "LANG";
+	private final String NAME = "NAME";
+	private final String WISHLIST = "WISHLIST";
+	private final String SHOPPINGCART = "SHOPPINGCART";
+	
+	private Map<String, Object> data = new HashMap<String, Object>();
+	public User()
+	{
+		data.put(WISHLIST, new ArrayList<Object>());
+		data.put(SHOPPINGCART, new ArrayList<Object>());
+>>>>>>> master
+	}
+	
+	@Override
+	public String getLanguage() {
+<<<<<<< HEAD
+		return language;
+=======
+		return (String) data.get(LANG);
+>>>>>>> master
+	}
+
+	@Override
+	public String getName() {
+<<<<<<< HEAD
+		return name;
+=======
+		return (String) data.get(NAME);
+>>>>>>> master
+	}
+
+	@Override
+	public List<ProductItem> getWishList() {
+<<<<<<< HEAD
+		return wishList;
+=======
+		return (List<ProductItem>) data.get(WISHLIST);
+>>>>>>> master
+	}
+
+	@Override
+	public List<ProductItem> getShoppingCart() {
+<<<<<<< HEAD
+		return shoppingCart;
+=======
+		return (List<ProductItem>) data.get(SHOPPINGCART);
+>>>>>>> master
+	}
+
+	@Override
+	public void setLanguage(String language) {
+<<<<<<< HEAD
+		this.language = language;
+=======
+		data.put(LANG,language);
+>>>>>>> master
+		
+	}
+
+	@Override
+	public void setName(String name) {
+<<<<<<< HEAD
+		this.name = name;
+=======
+		data.put(NAME, name);
+>>>>>>> master
+		
+	}
+
+	@Override
+	public void addItemToWishList(ProductItem o) {
+<<<<<<< HEAD
+		this.wishList.add(o);
+		
+	}
+	@Override
+	
+	public void removeItemFromWishList(ProductItem o) {
+		this.wishList.remove(o);
+	}
+	
+	@Override
+	public void addItemToShoppingCart(ProductItem o) {
+		this.shoppingCart.add(o);
+=======
+		((List<ProductItem>) data.get(WISHLIST)).add(o);
+	}
+
+	@Override
+	public void addItemToShoppingCart(ProductItem o) {
+		((List<ProductItem>) data.get(SHOPPINGCART)).add(o);
+>>>>>>> master
+		
+	}
+
+	@Override
+<<<<<<< HEAD
+	public void removeItemFromShoppingCart(ProductItem o) {
+		this.shoppingCart.remove(o);
+	}
+
+=======
+	public void removeItemFromWishList(ProductItem o) {
+		((List<ProductItem>) data.get(WISHLIST)).remove(o);
+	}
+
+	@Override
+	public void removeItemFromShoppingCart(ProductItem o) {
+		((List<ProductItem>) data.get(SHOPPINGCART)).add(o);
+	}
+
+	
+>>>>>>> master
+}
