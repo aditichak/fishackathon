@@ -26,5 +26,7 @@
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="title_activity_gallery_fragment">GalleryFragment</string>
+    <string name="title_activity_explore">ExploreActivity</string>
+    <string name="title_activity_maps">Map</string>
 
 </resources>
