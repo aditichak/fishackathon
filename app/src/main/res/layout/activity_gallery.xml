@@ -1,101 +1,187 @@
-<fragment xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:id="@+id/fragment"
-    tools:context="com.example.owner.fishyfish.GalleryActivityFragment"
-    tools:layout="@layout/fragment_gallery" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <LinearLayout
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <ImageView
+        android:id="@+id/selected"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/gallery_relative_layout"
+        android:layout_marginLeft="30dip"
+        android:layout_marginRight="30dip"
+        android:layout_marginTop="30dip"
 
-        android:id="@+id/gallery"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginTop="300dp"
+        android:layout_above="@+id/gallery_relative_layout"
+        />
 
-        android:layout_width="wrap_content"
+    <RelativeLayout
+        android:id="@+id/gallery_relative_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="200dip"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:paddingTop="20dp">
 
-        android:layout_height="wrap_content"
-
-        android:orientation="horizontal" >
-
-        <ImageView
-
-            android:id="@+id/image1"
-
-            android:layout_width="wrap_content"
-
+        <HorizontalScrollView
+            android:id="@+id/hor_scroll_view"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            >
+            <LinearLayout
+                android:id="@+id/gallery"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/im1"
+                    android:onClick="biggerView"/>
+                <ImageView
+                    android:id="@+id/image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/im2"
+                    android:onClick="biggerView"/>
+                <ImageView
+                    android:id="@+id/image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/im3"
+                    android:onClick="biggerView"/>
+                <ImageView
+                    android:id="@+id/image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/im4"
+                    android:onClick="biggerView"/>
+                <ImageView
+                    android:id="@+id/image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/im5"
+                    android:onClick="biggerView"/>
+                <ImageView
+                    android:id="@+id/image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/im6"
+                    android:onClick="biggerView"/>
+                <ImageView
+                    android:id="@+id/image7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/im7"
+                    android:onClick="biggerView"/>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </RelativeLayout>
+</RelativeLayout>
+    <!--<LinearLayout-->
 
-            android:src="@drawable/im1"
+        <!--android:id="@+id/gallery"-->
 
-            android:onClick="biggerView"/>
+        <!--android:layout_width="wrap_content"-->
 
-        <ImageView
+        <!--android:layout_height="wrap_content"-->
 
-            android:id="@+id/image2"
+        <!--android:orientation="horizontal" >-->
 
-            android:layout_width="wrap_content"
+        <!--<ImageView-->
 
-            android:layout_height="wrap_content"
+            <!--android:id="@+id/image1"-->
 
-            android:src="@drawable/im2"
+            <!--android:layout_width="wrap_content"-->
 
-            android:onClick="biggerView"/>
+            <!--android:layout_height="wrap_content"-->
 
-        <ImageView
+            <!--android:src="@drawable/im1"-->
 
-            android:id="@+id/image3"
+            <!--android:onClick="biggerView"/>-->
 
-            android:layout_width="wrap_content"
+        <!--<ImageView-->
 
-            android:layout_height="wrap_content"
+            <!--android:id="@+id/image2"-->
 
-            android:src="@drawable/im3"
+            <!--android:layout_width="wrap_content"-->
 
-            android:onClick="biggerView"/>
+            <!--android:layout_height="wrap_content"-->
 
-        <ImageView
+            <!--android:src="@drawable/im2"-->
 
-            android:id="@+id/image4"
+            <!--android:onClick="biggerView"/>-->
 
-            android:layout_width="wrap_content"
+        <!--<ImageView-->
 
-            android:layout_height="wrap_content"
+            <!--android:id="@+id/image3"-->
 
-            android:src="@drawable/im4"
+            <!--android:layout_width="wrap_content"-->
 
-            android:onClick="biggerView"/>
+            <!--android:layout_height="wrap_content"-->
 
-        <ImageView
+            <!--android:src="@drawable/im3"-->
 
-            android:id="@+id/image5"
+            <!--android:onClick="biggerView"/>-->
 
-            android:layout_width="wrap_content"
+        <!--<ImageView-->
 
-            android:layout_height="wrap_content"
+            <!--android:id="@+id/image4"-->
 
-            android:src="@drawable/im5"
+            <!--android:layout_width="wrap_content"-->
 
-            android:onClick="biggerView"/>
+            <!--android:layout_height="wrap_content"-->
 
-        <ImageView
+            <!--android:src="@drawable/im4"-->
 
-            android:id="@+id/image6"
+            <!--android:onClick="biggerView"/>-->
 
-            android:layout_width="wrap_content"
+        <!--<ImageView-->
 
-            android:layout_height="wrap_content"
+            <!--android:id="@+id/image5"-->
 
-            android:src="@drawable/im6"
+            <!--android:layout_width="wrap_content"-->
 
-            android:onClick="biggerView"/>
+            <!--android:layout_height="wrap_content"-->
 
-        <ImageView
+            <!--android:src="@drawable/im5"-->
 
-            android:id="@+id/image7"
+            <!--android:onClick="biggerView"/>-->
 
-            android:layout_width="wrap_content"
+        <!--<ImageView-->
 
-            android:layout_height="wrap_content"
+            <!--android:id="@+id/image6"-->
 
-            android:src="@drawable/im7"
+            <!--android:layout_width="wrap_content"-->
 
-            android:onClick="biggerView"/>
+            <!--android:layout_height="wrap_content"-->
 
-    </LinearLayout>
-</fragment>
+            <!--android:src="@drawable/im6"-->
+
+            <!--android:onClick="biggerView"/>-->
+
+        <!--<ImageView-->
+
+            <!--android:id="@+id/image7"-->
+
+            <!--android:layout_width="wrap_content"-->
+
+            <!--android:layout_height="wrap_content"-->
+
+            <!--android:src="@drawable/im7"-->
+
+            <!--android:onClick="biggerView"/>-->
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/imageView2" />-->
+
+    <!--</LinearLayout>-->

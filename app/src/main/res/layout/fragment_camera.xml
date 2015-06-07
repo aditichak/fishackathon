@@ -14,7 +14,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TakePicture"
+        android:text="Take a Picture!"
         android:id="@+id/buttonTakePicture"
         android:layout_gravity="left|bottom" />
 

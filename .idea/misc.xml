@@ -19,9 +19,8 @@
   <component name="ProjectType">
     <option name="id" value="Android" />
   </component>
-
   <component name="masterDetails">
-    <states>
+  <states>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.7</last-edited>
@@ -35,9 +34,6 @@
         </settings>
       </state>
     </states>
-
-  <component name="SvnConfiguration">
-    <configuration>$USER_HOME$/.subversion</configuration>
-
   </component>
+
 </project>
