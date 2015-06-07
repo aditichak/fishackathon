@@ -60,6 +60,9 @@ public class MainActivity extends ActionBarActivity
 
         Fragment fragment = null;
         switch (position) {
+            case 0:
+                fragment = CameraFragment.newInstance(position);
+                break;
             case 1:
                 Intent intent = new Intent("com.example.owner.fishyfish.GalleryActivityFragment");
                 startActivity(intent);
@@ -67,8 +70,6 @@ public class MainActivity extends ActionBarActivity
             case 2:
                 fragment = UserInputActivityFragment.newInstance(position);
                 break;
-            case 3:
-                fragment = CameraFragment.newInstance(position);
             default:
                 break;
         }

@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">FishyFish</string>
 
-    <string name="title_section1">Explore</string>
+    <string name="title_section1">Upload</string>
     <string name="title_section2">Gallery</string>
-    <string name="title_section3">Upload</string>
+    <string name="title_section3">Input</string>
     <string name="title_section4">Categories</string>
     <string name="title_section5">User</string>
 
