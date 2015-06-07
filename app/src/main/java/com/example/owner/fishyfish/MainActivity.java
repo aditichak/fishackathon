@@ -56,7 +56,7 @@ public class MainActivity extends ActionBarActivity
 
         //GoogleAppClient
 
-      mGoogleApiClient = new GoogleApiClient.Builder(this)
+        mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .addConnectionCallbacks(this)
                 .addOnConnectionFailedListener((OnConnectionFailedListener) this)
                 .addApi(Plus.API)

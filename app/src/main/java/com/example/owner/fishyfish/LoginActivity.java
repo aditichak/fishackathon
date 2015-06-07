@@ -1,68 +1,55 @@
 
-/**
- * Copyright 2015 Google Inc. All Rights Reserved.
- *
- *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
- * in compliance with the License. You may obtain a copy of the License at
- *
- *  http://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software distributed under the
- * License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either
- * express or implied. See the License for the specific language governing permissions and
- * limitations under the License.
- */
 
- package com.example.owner.fishyfish;
+package com.example.owner.fishyfish;
 
-    import com.google.android.gms.common.ConnectionResult;
-    import com.google.android.gms.common.GooglePlayServicesUtil;
-    import com.google.android.gms.common.SignInButton;
-    import com.google.android.gms.common.api.CommonStatusCodes;
-    import com.google.android.gms.common.api.GoogleApiClient;
-    import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
-    import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
-    import com.google.android.gms.common.api.ResultCallback;
-    import com.google.android.gms.common.api.Scope;
-    import com.google.android.gms.plus.People.LoadPeopleResult;
-    import com.google.android.gms.plus.Plus;
-    import com.google.android.gms.plus.model.people.Person;
-    import com.google.android.gms.plus.model.people.PersonBuffer;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.GooglePlayServicesUtil;
+import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.common.api.CommonStatusCodes;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.GoogleApiClient.ConnectionCallbacks;
+import com.google.android.gms.common.api.GoogleApiClient.OnConnectionFailedListener;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Scope;
+import com.google.android.gms.plus.People.LoadPeopleResult;
+import com.google.android.gms.plus.Plus;
+import com.google.android.gms.plus.model.people.Person;
+import com.google.android.gms.plus.model.people.PersonBuffer;
 
-    import android.app.AlertDialog;
-    import android.app.Dialog;
-    import android.app.PendingIntent;
-    import android.content.DialogInterface;
-    import android.content.Intent;
-    import android.content.IntentSender.SendIntentException;
-    import android.os.Bundle;
-    import android.support.v4.app.FragmentActivity;
-    import android.util.Log;
-    import android.view.View;
-    import android.widget.ArrayAdapter;
-    import android.widget.Button;
-    import android.widget.CheckBox;
-    import android.widget.CompoundButton;
-    import android.widget.ListView;
-    import android.widget.TextView;
-    import android.widget.Toast;
+import android.app.AlertDialog;
+import android.app.Dialog;
+import android.app.PendingIntent;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.content.IntentSender.SendIntentException;
+import android.os.Bundle;
+import android.support.v4.app.FragmentActivity;
+import android.util.Log;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
-    import org.apache.http.HttpResponse;
-    import org.apache.http.NameValuePair;
-    import org.apache.http.client.ClientProtocolException;
-    import org.apache.http.client.HttpClient;
-    import org.apache.http.client.entity.UrlEncodedFormEntity;
-    import org.apache.http.client.methods.HttpGet;
-    import org.apache.http.client.methods.HttpPost;
-    import org.apache.http.impl.client.DefaultHttpClient;
-    import org.apache.http.message.BasicNameValuePair;
-    import org.apache.http.util.EntityUtils;
+import org.apache.http.HttpResponse;
+import org.apache.http.NameValuePair;
+import org.apache.http.client.ClientProtocolException;
+import org.apache.http.client.HttpClient;
+import org.apache.http.client.entity.UrlEncodedFormEntity;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.client.methods.HttpPost;
+import org.apache.http.impl.client.DefaultHttpClient;
+import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 
-    import java.io.IOException;
-    import java.util.ArrayList;
-    import java.util.HashSet;
-    import java.util.List;
-    import java.util.Set;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 /**
  * Android Google+ Quickstart activity.
